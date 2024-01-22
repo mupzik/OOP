@@ -1,0 +1,5 @@
+﻿  fraction .cpp
+  fraction.cpp
+  frac_unit.cpp
+C:\Users\rozde\source\repos\fraction\frac_unit.cpp(1,10): fatal  error C1083: Не удается открыть файл включение: frac_unit.h: No such file or directory,
+  Создание кода...
