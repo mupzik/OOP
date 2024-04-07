@@ -66,6 +66,22 @@ void m136::IsSortedTest()
 	BubbleSortAscending(test5, 6);
 	assert(IsSortedAscending(test5, 6) == 1);
 	
+	// mergeSort test
+	mergeSort(test4, 0, 5);
+	assert(IsSortedAscending(test4, 6) == 1);
+	mergeSort(test6, 0, 4);
+	assert(IsSortedAscending(test6, 5) == 1);
+	mergeSort(test5, 0, 5);
+	assert(IsSortedAscending(test5, 6) == 1);
+
+	// quickSort test
+	quickSort(test4, 0, 5);
+	assert(IsSortedAscending(test4, 6) == 1);
+	quickSort(test6, 0, 4);
+	assert(IsSortedAscending(test6, 5) == 1);
+	quickSort(test5, 0, 5);
+	assert(IsSortedAscending(test5, 6) == 1);
+
 	// середина, начало, нет, в конце
 	// BinarySearchA test
 	assert(BinarySearchA(test3, 5, 3) == 2); // в середине

@@ -440,14 +440,7 @@ namespace m136 {
 			indexOfMergedArray++;
 		}
 
-		// Copy the remaining elements of
-		// left[], if there are any
-		while (indexOfSubArrayOne < subArrayOne) {
-			arr[indexOfMergedArray]
-				= leftArray[indexOfSubArrayOne];
-			indexOfSubArrayOne++;
-			indexOfMergedArray++;
-		}
+		memcpy(arr, leftArray, sizeof(size_t)*(subArrayOne-indexOfSubArrayOne));
 
 		// Copy the remaining elements of
 		// right[], if there are any
@@ -457,13 +450,18 @@ namespace m136 {
 			indexOfSubArrayTwo++;
 			indexOfMergedArray++;
 		}
+
+		
+
+		//memcpy(arr + sizeof(arr[0]) * (subArrayOne - indexOfSubArrayOne + 1), rightArray, sizeof(size_t) * (subArrayTwo - indexOfSubArrayTwo));
+
 		delete[] leftArray;
 		delete[] rightArray;
 	}
 
 
 
-	/// posl - указатель на масиив, n - размер массива
+	/// posl - указатель на масиив, n - размер массива, худший, лучший, средний случаи - O(n*log(n)) 
 	/// a - сортируемый массив, его левая граница lb, правая граница ub (n - 1)
 	/// сортировка слиянием
 	template <class T>
@@ -484,37 +482,29 @@ namespace m136 {
 	size_t partition(T* arr, size_t start, size_t end)
 	{
 
+		// Выбор опорного элемента
 		T pivot = arr[start];
+		size_t i = start + 1;
+		size_t j = end;
 
-		size_t count = 0;
-		for (size_t i = start + 1; i <= end; i++) {
-			if (arr[i] < pivot)
-				count++;
-		}
-
-		// Giving pivot element its correct position
-		size_t pivotIndex = start + count;
-		swap(arr[pivotIndex], arr[start]);
-
-		// Sorting left and right parts of the pivot element
-		size_t i = start, j = end;
-
-		while (i < pivotIndex && j > pivotIndex) {
-
-			while (arr[i] <= pivot) {
+		while (true)
+		{
+			while (i <= j && arr[i] <= pivot)
 				i++;
-			}
-
-			while (arr[j] > pivot) {
+			while (i <= j && arr[j] > pivot)
 				j--;
-			}
 
-			if (i < pivotIndex && j > pivotIndex) {
-				swap(arr[i++], arr[j--]);
-			}
+			if (i >= j)
+				break;
+
+			// Меняем элементы местами
+			swap(arr[i], arr[j]);
 		}
 
-		return pivotIndex;
+		// Перемещаем опорный элемент на свое место
+		swap(arr[start], arr[j]);
+
+		return j;
 	}
 
 	/// быстрая сортировка
@@ -523,17 +513,20 @@ namespace m136 {
 	{
 
 		// base case
-		if (start >= end)
-			return;
+		if (start < end)
+		{
 
-		// partitioning the array
-		size_t p = partition(arr, start, end);
+			// partitioning the array
+			size_t p = partition(arr, start, end);
 
-		// Sorting the left part
-		quickSort(arr, start, p - 1);
+			if (p > 0)
+				// Sorting the left part
+				quickSort(arr, start, p - 1);
 
-		// Sorting the right part
-		quickSort(arr, p + 1, end);
+			if (p < end)
+				// Sorting the right part
+				quickSort(arr, p + 1, end);
+		}
 	}
 
 
