@@ -1,12 +1,2 @@
-﻿  saod_unit.cpp
-C:\Users\rozde\source\repos\SAOD TEST\saod_unit.cpp(9,27): warning C4305: инициализация: усечение из "double" в "_Ty"
-          with
-          [
-              _Ty=float
-          ]
-C:\Users\rozde\source\repos\SAOD TEST\saod_unit.cpp(9,38): warning C4305: инициализация: усечение из "double" в "_Ty"
-          with
-          [
-              _Ty=float
-          ]
+﻿  SAOD TEST.cpp
   SAOD TEST.vcxproj -> C:\Users\rozde\source\repos\SAOD TEST\x64\Debug\SAOD TEST.exe

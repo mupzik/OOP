@@ -37,47 +37,8 @@ int main()
 	cout << duration_cast<milliseconds>(t1 - t0).count()/100 << "\t\t ";
 
 
-	//// count for SumEmemR function
-	//// start time point
-	//t0 = steady_clock::now();
-	//for (int i = 0; i < 101; i++)
-	//{
-	//	SumElemR(test_mas, n);
-	//}
-	//// finish time point
-	//t1 = steady_clock::now();
-	//// console output
-	//cout << duration_cast<milliseconds>(t1 - t0).count() / 100 << "\t\t ";
 
-
-	//// count for SumEmemI function
-	//// start time point
-	//t0 = steady_clock::now();
-	//for (int i = 0; i < 101; i++)
-	//{
-	//	SumElemI(test_mas, n);
-	//}
-	//// finish time point
-	//t1 = steady_clock::now();
-	//// console output
-	//cout << duration_cast<milliseconds>(t1 - t0).count() / 100 << "\t\t ";
-
-	// count for SelectedSortAsc.. function
-	// start time point
-	t0 = steady_clock::now();
-	
-	quickSort(test_mas, 0, n-1);
-	
-	// finish time point
-	t1 = steady_clock::now();
-	// console output
-	
-	cout << (t1 - t0).count()/100 << "\t\t\t ";
-
-	cout << IsSorted(test_mas, n);
-
-
-
+	// ПОИСК
 
 	//cout << "Введите искомое число: " << endl;
 	//cin >> key;
@@ -93,34 +54,9 @@ int main()
 	//// console output
 	//cout << (t1 - t0).count() / 100 << "\t\t ";
 
-	//// count for BinerySearch function
-	//// start time point
-	//t0 = steady_clock::now();
-	//for (int i = 0; i < 101; i++)
-	//{
-	//	BinarySearchA<double>(test_mas, n, key);
-	//}
-	//// finish time point
-	//t1 = steady_clock::now();
-	//// console output
-	//cout << (t1 - t0).count() / 100 << "\t\t ";
-
-
-	//// count for FiWritee function
-	//// start time point
-	//t0 = steady_clock::now();
-	//for (int i = 0; i < 101; i++)
-	//{
-	//	FiWritee("2", test_mas, n);
-	//}
-	//// finish time point
-	//t1 = steady_clock::now();
-	//// console output
-	//cout << duration_cast<milliseconds>(t1 - t0).count()/100 << "\t\t ";
-
-
+	//МАКС. ЭЛЕМЕНТ
+	
 	//double max1, max2;
-
 	//cout << "\nMaxEl:\n";
 	//// count for IsSorted function
 	//// start time point

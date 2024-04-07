@@ -212,6 +212,7 @@ namespace m136 {
 
 	///Сортировка массива по возрастанию
 	///posl - указатель на массив с последовательностью, n - размер последовательности
+	/// best case - O(n), average, worst - O(n2)
 	template <typename T>
 	void BubbleSortAscending(T* posl, const size_t n)
 	{
@@ -231,6 +232,7 @@ namespace m136 {
 
 	///Сортировка массива по убыванию
 	///posl - указатель на массив с последовательностью, n - размер последовательности
+	/// best case - O(n), average, worst - O(n2)
 	template <typename T>
 	void BubbleSortDescending(T* posl, const size_t n)
 	{
@@ -400,6 +402,9 @@ namespace m136 {
 		return sum;
 	}
 
+
+
+
 	/// функция объединяет два массива для сортировки слиянием
 	/// первый подмассив arr[begin..mid]
 	/// второй подмассив arr[mid+1..end]
@@ -440,8 +445,10 @@ namespace m136 {
 			indexOfMergedArray++;
 		}
 
-		memcpy(arr, leftArray, sizeof(size_t)*(subArrayOne-indexOfSubArrayOne));
-
+		
+		
+		memcpy(&arr[indexOfMergedArray], &leftArray[indexOfSubArrayOne], (subArrayOne - indexOfSubArrayOne) * sizeof(size_t));
+		
 		// Copy the remaining elements of
 		// right[], if there are any
 		while (indexOfSubArrayTwo < subArrayTwo) {
@@ -451,18 +458,17 @@ namespace m136 {
 			indexOfMergedArray++;
 		}
 
+		//memcpy(&arr[subArrayOne+1], &rightArray[indexOfSubArrayTwo], (subArrayTwo - indexOfSubArrayTwo) * sizeof(size_t));
+
 		
-
-		//memcpy(arr + sizeof(arr[0]) * (subArrayOne - indexOfSubArrayOne + 1), rightArray, sizeof(size_t) * (subArrayTwo - indexOfSubArrayTwo));
-
 		delete[] leftArray;
 		delete[] rightArray;
 	}
 
 
 
-	/// posl - указатель на масиив, n - размер массива, худший, лучший, средний случаи - O(n*log(n)) 
-	/// a - сортируемый массив, его левая граница lb, правая граница ub (n - 1)
+	/// posl - указатель на масиив, n - размер массива, lb - левая граница, ub (n - 1) - правая граница 
+	/// худший, лучший, средний случаи - O(n*log(n)) 
 	/// сортировка слиянием
 	template <class T>
 	void mergeSort(T* posl, size_t lb, size_t ub) {
@@ -507,6 +513,9 @@ namespace m136 {
 		return j;
 	}
 
+	/// arr - массив, start - индекс первого элемента, end - индекс последнего элемента
+	/// перед использованием необходима проверка на сортировку
+	/// best and on average - O(n*log(n)), worst case - O(n2)
 	/// быстрая сортировка
 	template <typename T>
 	void quickSort(T* arr, size_t start, size_t end)
