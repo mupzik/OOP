@@ -88,6 +88,7 @@ namespace mylist{
 			tail = ptr;
 		}
 
+		/// return Node at the index
 		Node<T>* getAt(size_t index)
 		{
 			Node<T>* ptr = head;
@@ -102,6 +103,7 @@ namespace mylist{
 			return ptr;
 		}
 
+		/// returned size of list
 		size_t listSize()
 		{
 			Node<T>* ptr = head;
@@ -114,11 +116,24 @@ namespace mylist{
 			return n;
 		}
 
+		/// return Node at the index
 		Node<T>* operator [](size_t index)
 		{
 			return getAt(index);
 		}
 
+		/// returned head Node
+		Node<T>* get_head()
+		{
+			return head;
+		}
+
+		/// returned head Node
+		Node<T>* get_tail()
+		{
+			return tail;
+		}
+		///
 		Node<T>* insert(size_t index, T data)
 		{
 			Node<T>* right = getAt(index);
@@ -135,6 +150,22 @@ namespace mylist{
 			right->prev = ptr;
 
 			return ptr;
+		}
+
+		/// search
+		long long search(T key)
+		{
+			if (head == nullptr) return;
+
+			Node<T> cur = head;
+			long long index = 0;
+			while (cur != nullptr)
+			{
+				if (cur->data == key)
+					return index;
+				cur = cur->next;
+				index++;
+			}
 		}
 
 		void erase(size_t index)
@@ -248,5 +279,94 @@ namespace mylist{
 		assert(list.listSize() == 3);
 		assert(list[2]->data == 3);
 	}
+
+	template <typename T>
+	class Stack
+	{
+	private:
+		/// data for Stack
+		/// using class List
+		List<T> list;
+
+	public:
+		/// конструктор 
+		Stack()
+		{
+			List<T> list;
+		}
+
+		/// push new data on Stack
+		void push(T newData)
+		{
+			list.push_back(newData);
+			return;
+		}
+
+		/// pop data from stack
+		T pop()
+		{
+			T cur = list.get_tail()->data;
+			list.pop_back();
+			return cur;
+		}
+
+		/// see data
+		T peek()
+		{
+			return list.get_tail()->data;
+		}
+
+		/// clear stack
+		void clear()
+		{
+			list.clear();
+			return;
+		}
+	};
+
+	/// queue class
+	template <typename T>
+	class Queue
+	{
+	private:
+		/// data for  Queue
+		/// using class List
+		List<T> list;
+
+	public:
+		/// конструктор класса
+		Queue()
+		{
+			List<T> list;
+		}
+
+		/// push new data in Queue
+		void push(T newData)
+		{
+			list.push_front(newData);
+			return;
+		}
+
+		/// pop  data from the Queue
+		T pop()
+		{
+			T cur = list.get_tail()->data;
+			list.pop_back();
+			return cur;
+		}
+
+		/// see data
+		T peek()
+		{
+			return list.get_tail()->data;
+		}
+
+		/// clear Queue
+		void clear()
+		{
+			list.clear();
+			return;
+		}
+	};
 }
 
