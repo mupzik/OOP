@@ -8,8 +8,8 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="451.0" prefWidth="465.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chatbot.MainChatController">
    <children>
-      <Button fx:id="SendButton" layoutX="377.0" layoutY="394.0" mnemonicParsing="false" onAction="#sendMessage" prefHeight="30.0" prefWidth="50.0" text="Send" />
-      <TextField fx:id="messageTextField" layoutX="39.0" layoutY="394.0" prefHeight="30.0" prefWidth="329.0" promptText="Привет, Марвин!" />
-      <TextArea fx:id="chatTextArea" layoutX="39.0" layoutY="29.0" prefHeight="342.0" prefWidth="388.0" />
+      <Button fx:id="SendButton" layoutX="377.0" layoutY="394.0"  mnemonicParsing="false" onAction="#onButtonClick" prefHeight="30.0" prefWidth="50.0" text="Send" />
+      <TextField fx:id="messageTextField" layoutX="39.0" layoutY="394.0" onKeyPressed="#onTextField_sendPressed" prefHeight="30.0" prefWidth="329.0" promptText="Привет, Марвин!" />
+      <TextArea fx:id="chatTextArea" layoutX="39.0" layoutY="29.0"  prefHeight="342.0" prefWidth="388.0" />
    </children>
 </AnchorPane>

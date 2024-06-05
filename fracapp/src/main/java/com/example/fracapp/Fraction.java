@@ -1,11 +1,14 @@
 package com.example.fracapp;
+// developer Volosikova M.A.
 
+/** MY FRACTION CLASS*/
 public class Fraction {
 
-    /// числитель и знаменатель
+    /** числитель и знаменатель*/
     private int num, den;
 
-    /// конструктор, начальные значения 1/1
+    /** конструктор, начальные значения 1/1
+     * бросает исключение, если знаменатель = 0*/
     public Fraction(int nnum, int dden) {
 
         if (dden == 0)
@@ -15,52 +18,55 @@ public class Fraction {
         }
     }
 
-    /// конструктор, начальные значения 1/1
+    /** конструктор, начальные значения 1/1 */
     public Fraction() {
         set_frac(1, 1);
     }
 
-    /// задать числитель
+    /** задать числитель*/
     public void set_num(int new_num) {
         num = new_num;
     }
 
-    /// задать знаменатель
+    /** задать знаменатель
+     * бросает исключение, если знаменатель = 0 */
     public void set_den(int new_den) {
         // проверка знаменателя на 0
         if (new_den == 0)
-            throw new IllegalArgumentException("denominator can not be '0' ");
+            throw new IllegalArgumentException("denominator can not be '0'");
         else
             den = new_den;
     }
 
-    /// задать дробь
+    /** задать дробь
+     * бросает исключение, если знаменатель = 0 */
     public void set_frac(int new_num, int new_den) {
         set_den(new_den);
         set_num(new_num);
     }
 
-    /// вывести числитель
+    /** вывести числитель*/
     public int get_num() {
         return num;
     }
 
-    /// вывести знаменатель
+    /** вывести знаменатель*/
     public int get_den() {
         return den;
     }
 
-    /// вывести десятичную дробь
+    /** вывести десятичную дробь*/
     public float get_frac_dec() {
         return (float) num / (float) den;
     }
 
-    /// вывести обыкновенную дробь
-    public String get_frac() {
+    @Override
+    /** вывести обыкновенную дробь*/
+    public String toString() {
         return Integer.toString(this.get_num()) + "/" + Integer.toString(this.get_den());
     }
 
-    /// операция сложение дробей
+    /** операция сложение дробей*/
     public Fraction sum(Fraction sum_frac) {
         Fraction Result = new Fraction();
         Result.num = num * sum_frac.den + den * sum_frac.num;
@@ -68,7 +74,7 @@ public class Fraction {
         return Result;
     }
 
-    /// операция  вычитание дробей
+    /** операция  вычитание дробей*/
     public Fraction sub(Fraction sum_frac) {
         Fraction Result = new Fraction();
         Result.num = num * sum_frac.den - den * sum_frac.num;
@@ -76,7 +82,7 @@ public class Fraction {
         return Result;
     }
 
-    /// операция перемножение
+    /** операция перемножение*/
     public Fraction mul(Fraction mul_frac) {
         Fraction Result = new Fraction();
         Result.num = num * mul_frac.num;
@@ -84,7 +90,7 @@ public class Fraction {
         return Result;
     }
 
-    /// операция деление
+    /**операция деление*/
     public Fraction div(Fraction div_frac) {
         Fraction Result = new Fraction();
         Result.num = num * div_frac.den;
@@ -92,21 +98,21 @@ public class Fraction {
         return Result;
     }
 
-    /// операция сравнениие
+    /** операция сравнениие*/
     public boolean eq(Fraction eq_frac) {
         if ((float) num / (float) den == (float) eq_frac.num / (float) eq_frac.den)
             return true;
         else return false;
     }
 
-    /// операция сократить дробь
+    /** операция сократить дробь*/
     public void reduce() {
         int c = NOD(num, den);
         num = num / c;
         den = den / c;
     }
 
-    /// возвращает наибольший общий делитель a и b
+    /** возвращает наибольший общий делитель a и b*/
     public static int NOD(int a, int b) {
         // итерация цикла присваивает большему числу остаток от деления большего на меньшее
         while (a != 0 && b != 0) {
