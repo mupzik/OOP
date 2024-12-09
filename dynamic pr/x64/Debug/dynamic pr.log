@@ -1,0 +1,5 @@
+﻿  dynamic pr.cpp
+C:\Users\rozde\source\repos\dynamic pr\dynamic pr.cpp(42,12): warning C4804: <: небезопасное использование типа "bool" в операции
+  equation.cpp
+  Создание кода...
+  dynamic pr.vcxproj -> C:\Users\rozde\source\repos\dynamic pr\x64\Debug\dynamic pr.exe
