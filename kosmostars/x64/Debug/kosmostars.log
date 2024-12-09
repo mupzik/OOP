@@ -1,0 +1,13 @@
+﻿  kosmostars.cpp
+  space_unit.cpp
+C:\Users\rozde\source\repos\kosmostars\space_unit.cpp(120,15): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\rozde\source\repos\kosmostars\space_unit.cpp(121,20): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\rozde\source\repos\kosmostars\space_unit.cpp(145,15): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\rozde\source\repos\kosmostars\space_unit.cpp(146,20): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\rozde\source\repos\kosmostars\space_unit.cpp(212,30): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\rozde\source\repos\kosmostars\space_unit.cpp(221,24): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+C:\Users\rozde\source\repos\kosmostars\space_unit.cpp(325,36): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\rozde\source\repos\kosmostars\space_unit.cpp(327,29): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\rozde\source\repos\kosmostars\space_unit.cpp(360,2): warning C4804: >=: небезопасное использование типа "bool" в операции
+  Создание кода...
+C:\Users\rozde\source\repos\kosmostars\space_unit.cpp(109): error C4716: space_unit::info: должна возвращать значение
