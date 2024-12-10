@@ -1,0 +1,94 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\rozde\\source\\repos\\LIST\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B2FD9276-3138-4C77-B599-B9672072AC46}|LIST.vcxproj|C:\\Users\\rozde\\source\\repos\\LIST\\List.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B2FD9276-3138-4C77-B599-B9672072AC46}|LIST.vcxproj|solutionrelative:List.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2FD9276-3138-4C77-B599-B9672072AC46}|LIST.vcxproj|C:\\Users\\rozde\\source\\repos\\LIST\\LIST.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B2FD9276-3138-4C77-B599-B9672072AC46}|LIST.vcxproj|solutionrelative:LIST.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 925,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 332,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "List.h",
+              "DocumentMoniker": "C:\\Users\\rozde\\source\\repos\\LIST\\List.h",
+              "RelativeDocumentMoniker": "List.h",
+              "ToolTip": "C:\\Users\\rozde\\source\\repos\\LIST\\List.h",
+              "RelativeToolTip": "List.h",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAADgAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-22T11:46:55.504Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LIST.cpp",
+              "DocumentMoniker": "C:\\Users\\rozde\\source\\repos\\LIST\\LIST.cpp",
+              "RelativeDocumentMoniker": "LIST.cpp",
+              "ToolTip": "C:\\Users\\rozde\\source\\repos\\LIST\\LIST.cpp",
+              "RelativeToolTip": "LIST.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-22T11:46:01.421Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 19,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 21,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 3,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

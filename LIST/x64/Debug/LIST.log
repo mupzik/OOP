@@ -1,0 +1,63 @@
+﻿  LIST.cpp
+C:\Users\rozde\source\repos\LIST\List.h(735,25): error C2059: синтаксическая ошибка: )
+C:\Users\rozde\source\repos\LIST\List.h(740,3): error C2143: синтаксическая ошибка: отсутствие ";" перед "void"
+C:\Users\rozde\source\repos\LIST\List.h(735,26): error C2059: синтаксическая ошибка: ->
+C:\Users\rozde\source\repos\LIST\List.h(740,3): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "mylist::Deck<T>"
+C:\Users\rozde\source\repos\LIST\List.h(735): error C2238: непредвиденные лексемы перед ";"
+C:\Users\rozde\source\repos\LIST\List.h(735,25): error C2760: синтаксическая ошибка: непредвиденный элемент "}". Ожидается ";"
+C:\Users\rozde\source\repos\LIST\List.h(742,4): error C2065: list: необъявленный идентификатор
+C:\Users\rozde\source\repos\LIST\List.h(751,3): error C2065: Deck: необъявленный идентификатор
+C:\Users\rozde\source\repos\LIST\List.h(751,8): error C2062: тип "int" не требуется
+C:\Users\rozde\source\repos\LIST\List.h(755,3): error C2065: dck: необъявленный идентификатор
+C:\Users\rozde\source\repos\LIST\List.h(756,3): error C2065: dck: необъявленный идентификатор
+C:\Users\rozde\source\repos\LIST\List.h(757,3): error C2065: dck: необъявленный идентификатор
+C:\Users\rozde\source\repos\LIST\List.h(758,3): error C2065: dck: необъявленный идентификатор
+C:\Users\rozde\source\repos\LIST\List.h(759,3): error C2065: dck: необъявленный идентификатор
+C:\Users\rozde\source\repos\LIST\List.h(760,3): error C2065: dck: необъявленный идентификатор
+C:\Users\rozde\source\repos\LIST\List.h(761,3): error C2065: dck: необъявленный идентификатор
+C:\Users\rozde\source\repos\LIST\List.h(762,3): error C2065: dck: необъявленный идентификатор
+C:\Users\rozde\source\repos\LIST\List.h(763,3): error C2065: dck: необъявленный идентификатор
+C:\Users\rozde\source\repos\LIST\List.h(764,3): error C2065: dck: необъявленный идентификатор
+C:\Users\rozde\source\repos\LIST\List.h(765,3): error C2065: dck: необъявленный идентификатор
+C:\Users\rozde\source\repos\LIST\List.h(768,3): error C2065: dck: необъявленный идентификатор
+C:\Users\rozde\source\repos\LIST\List.h(769,3): error C2065: dck: необъявленный идентификатор
+C:\Users\rozde\source\repos\LIST\List.h(770,3): error C2065: dck: необъявленный идентификатор
+C:\Users\rozde\source\repos\LIST\List.h(771,3): error C2065: dck: необъявленный идентификатор
+C:\Users\rozde\source\repos\LIST\List.h(772,3): error C2065: dck: необъявленный идентификатор
+C:\Users\rozde\source\repos\LIST\List.h(773,3): error C2065: dck: необъявленный идентификатор
+C:\Users\rozde\source\repos\LIST\List.h(774,3): error C2065: dck: необъявленный идентификатор
+C:\Users\rozde\source\repos\LIST\List.h(778,4): error C2065: dck: необъявленный идентификатор
+C:\Users\rozde\source\repos\LIST\List.h(779,3): error C2065: dck: необъявленный идентификатор
+C:\Users\rozde\source\repos\LIST\List.h(780,3): error C2065: dck: необъявленный идентификатор
+C:\Users\rozde\source\repos\LIST\List.h(782,4): error C2065: dck: необъявленный идентификатор
+C:\Users\rozde\source\repos\LIST\List.h(783,3): error C2065: dck: необъявленный идентификатор
+C:\Users\rozde\source\repos\LIST\List.h(784,3): error C2065: dck: необъявленный идентификатор
+C:\Users\rozde\source\repos\LIST\List.h(786,4): error C2065: dck: необъявленный идентификатор
+C:\Users\rozde\source\repos\LIST\List.h(787,3): error C2065: dck: необъявленный идентификатор
+C:\Users\rozde\source\repos\LIST\List.h(788,3): error C2065: dck: необъявленный идентификатор
+C:\Users\rozde\source\repos\LIST\List.h(792,3): error C2065: dck: необъявленный идентификатор
+C:\Users\rozde\source\repos\LIST\List.h(793,3): error C2065: dck: необъявленный идентификатор
+C:\Users\rozde\source\repos\LIST\List.h(794,3): error C2065: dck: необъявленный идентификатор
+C:\Users\rozde\source\repos\LIST\List.h(795,3): error C2065: dck: необъявленный идентификатор
+C:\Users\rozde\source\repos\LIST\List.h(796,3): error C2065: dck: необъявленный идентификатор
+C:\Users\rozde\source\repos\LIST\List.h(797,3): error C2065: dck: необъявленный идентификатор
+C:\Users\rozde\source\repos\LIST\List.h(798,3): error C2065: dck: необъявленный идентификатор
+C:\Users\rozde\source\repos\LIST\List.h(799,3): error C2065: dck: необъявленный идентификатор
+C:\Users\rozde\source\repos\LIST\List.h(800,3): error C2065: dck: необъявленный идентификатор
+C:\Users\rozde\source\repos\LIST\List.h(801,3): error C2065: dck: необъявленный идентификатор
+C:\Users\rozde\source\repos\LIST\List.h(802,3): error C2065: dck: необъявленный идентификатор
+C:\Users\rozde\source\repos\LIST\List.h(805,3): error C2065: dck: необъявленный идентификатор
+C:\Users\rozde\source\repos\LIST\List.h(806,3): error C2065: dck: необъявленный идентификатор
+C:\Users\rozde\source\repos\LIST\List.h(807,3): error C2065: dck: необъявленный идентификатор
+C:\Users\rozde\source\repos\LIST\List.h(808,3): error C2065: dck: необъявленный идентификатор
+C:\Users\rozde\source\repos\LIST\List.h(809,3): error C2065: dck: необъявленный идентификатор
+C:\Users\rozde\source\repos\LIST\List.h(810,3): error C2065: dck: необъявленный идентификатор
+C:\Users\rozde\source\repos\LIST\List.h(811,3): error C2065: dck: необъявленный идентификатор
+C:\Users\rozde\source\repos\LIST\List.h(814,1): error C2059: синтаксическая ошибка: }
+C:\Users\rozde\source\repos\LIST\List.h(814,1): error C2143: синтаксическая ошибка: отсутствие ";" перед "}"
+C:\Users\rozde\source\repos\LIST\LIST.cpp(6,5): error C3861: listTest: идентификатор не найден
+C:\Users\rozde\source\repos\LIST\LIST.cpp(7,5): error C3861: stack_test: идентификатор не найден
+C:\Users\rozde\source\repos\LIST\LIST.cpp(8,5): error C3861: queue_test: идентификатор не найден
+C:\Users\rozde\source\repos\LIST\LIST.cpp(10,5): error C2065: Stack: необъявленный идентификатор
+C:\Users\rozde\source\repos\LIST\LIST.cpp(10,11): error C2062: тип "int" не требуется
+C:\Users\rozde\source\repos\LIST\LIST.cpp(12,28): error C2065: test: необъявленный идентификатор

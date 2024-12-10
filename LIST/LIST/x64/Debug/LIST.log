@@ -1,0 +1,3 @@
+﻿  LIST.cpp
+C:\Users\rozde\source\repos\LIST\List.h(819,1): warning C4715: mylist::Deck<int>::peek_front: значение возвращается не при всех путях выполнения
+  LIST.vcxproj -> C:\Users\rozde\source\repos\LIST\x64\Debug\LIST.exe
